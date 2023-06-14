@@ -1,0 +1,189 @@
+
+@font-face {
+    font-family: odinFont;
+    src: url(pics/Norse-Bold.otf);
+}
+
+body {
+    padding: none;
+    margin: 0;
+    display: flex;
+    
+}
+
+/*-------------------------LEFT----------------------------------------------*/
+#left {
+    flex: 1;
+    background-image: url(pics/laptop.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: none;
+}
+
+.content > p {
+    font-size: 4rem;
+    font-family: odinFont,'Courier New', Courier, monospace;
+}
+
+#left p {
+    color: white;
+}
+
+#left > p {
+    
+    text-align: center;
+}
+
+/*-------------------------RIGHT----------------------------------------------*/
+
+#right {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+   
+}
+
+.first {
+    flex: 1;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    padding-left: 2rem;
+    height: 25vh;
+}
+
+.first p {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+p:first-child {
+    inline-size: 75%;
+    overflow-wrap: break-word;
+}
+
+
+
+
+
+.form {
+    flex: 1;
+    padding: 2rem;
+    height: 43vh;
+    position: relative;
+    bottom: 2.5rem;
+}
+
+.form h5 {
+    font-size: 1.7rem;
+    padding: 0;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form > form {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    width: 75%;
+
+}
+
+.mismatch-pass {
+   color: red;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 18rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input {
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input:required {
+    border: 1px solid black;
+}
+  
+input:optional {
+    border: 1px solid silver;
+}
+input:invalid {
+    border-color: red;
+}
+
+.pass-condition {
+    font-size: 0.9rem;
+    color:rgb(83, 87, 87);
+    position: relative;
+    bottom: 1rem; 
+}
+  
+input:valid {
+    border-color: green;
+}
+
+.third {
+    flex: 1;
+    background-color: rgb(250, 250, 250);
+    height: 31vh;
+}
+
+.third  div {
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+   
+}
+
+.form button {
+    background-color: rgb(50, 161, 50);
+    color: white;
+    font-weight: 650;
+    font-size: 1rem;
+    padding: 0.6rem 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.of-third {
+    position: relative;
+    top: 2.5rem;
+    left: 1.1rem;
+}
+
+.of-third a {
+    text-decoration: none;
+    color: rgb(50, 161, 50);
+}
